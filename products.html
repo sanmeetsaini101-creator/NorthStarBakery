@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - North Star Bakery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="bakery-logo_c.png" alt="North Star Bakery Logo">
+            <h1>Our Menu & Products</h1>
+        </div>
+        <p class="tagline">Explore our daily selection of freshly baked goods.</p>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact & Pre-Orders</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Product Categories & Wishlist</h2>
+            <p>We pride ourselves on using organic local grains, European butter, and traditional methods for all our creations. Browse our categories below, save your favorites to your wishlist, and visit our contact page to place a pre-order.</p>
+            
+            <!-- Interactive Wishlist Tracker Box -->
+            <div id="wishlist-box" style="background-color: #FFF8F0; border: 2px dashed #D88C5A; padding: 1rem; margin-top: 1rem; border-radius: 6px;">
+                <h3>Your Bakery Wishlist</h3>
+                <ul id="wishlist-items" style="margin: 0.5rem 0 0 1.2rem;">
+                    <!-- Dynamically populated by script.js -->
+                </ul>
+            </div>
+
+            <figure>
+                <img src="bakery-signature-loaf_c.png" alt="Our award-winning Signature Sourdough Loaf showing a crisp, scored golden crust">
+                <figcaption>Figure 1: Our famous house-milled Sourdough Signature Loaf, baked fresh daily.</figcaption>
+            </figure>
+        </section>
+
+        <div class="product-grid">
+            <section class="card">
+                <h3>Breads</h3>
+                <img src="bakery-bread_c.png" alt="Assorted rustic artisan breads displayed on a baker's rack" class="inline-img">
+                <p>Hand-shaped, slow-fermented artisan loaves with crisp crusts and tender interiors.</p>
+                <ul>
+                    <li>Country Sourdough - $6.50 / loaf <button class="wishlist-btn" data-product="Country Sourdough">Add to Wishlist</button></li>
+                    <li>Multigrain Seeded Loaf - $7.00 / loaf <button class="wishlist-btn" data-product="Multigrain Seeded Loaf">Add to Wishlist</button></li>
+                    <li>French Baguette - $4.00 / loaf <button class="wishlist-btn" data-product="French Baguette">Add to Wishlist</button></li>
+                </ul>
+            </section>
+
+            <section class="card">
+                <h3>Pastries</h3>
+                <p>Flaky, buttery pastries rolled and baked fresh every morning before sunrise.</p>
+                <ul>
+                    <li>All-Butter Croissant - $3.75 <button class="wishlist-btn" data-product="All-Butter Croissant">Add to Wishlist</button></li>
+                    <li>Almond Twice-Baked Croissant - $4.50 <button class="wishlist-btn" data-product="Almond Twice-Baked Croissant">Add to Wishlist</button></li>
+                    <li>Seasonal Fruit Danish - $4.25 <button class="wishlist-btn" data-product="Seasonal Fruit Danish">Add to Wishlist</button></li>
+                </ul>
+            </section>
+
+            <section class="card">
+                <h3>Cakes & Special Orders</h3>
+                <p>Custom celebration cakes, tarts, and dessert platters tailored for family gatherings and local events.</p>
+                <ul>
+                    <li>Custom Celebration Cakes - Starting at $45.00 <button class="wishlist-btn" data-product="Custom Celebration Cakes">Add to Wishlist</button></li>
+                    <li>Seasonal Fruit Tart (Serves 8-10) - $38.00 <button class="wishlist-btn" data-product="Seasonal Fruit Tart">Add to Wishlist</button></li>
+                    <li>Assorted Cookie Platter (Dozen) - $24.00 <button class="wishlist-btn" data-product="Assorted Cookie Platter">Add to Wishlist</button></li>
+                </ul>
+                <p><em>Note: Pricing ranges are provided for reference. No online checkout is required; please use our pre-order form to secure your items.</em></p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 North Star Bakery. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript Link -->
+    <script src="script.js"></script>
+</body>
+</html>
